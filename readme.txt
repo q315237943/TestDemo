@@ -28,7 +28,7 @@ git push // 推送代码到远程仓库
 
 
 
-eval $(ssh-agent -s)
+eval $(ssh-agent -s)      //容易出问题的地方
 ssh-add ~/.ssh/id_rsa  // 将密匙加入git
 
 
