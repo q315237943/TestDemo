@@ -14,15 +14,16 @@ git config --global user.name "yuan"		//显示的名字
 
 git config --global user.email "yuan_guoan@163.com"	//显示的邮箱
 
- git config --global push.default simple
+git config --global push.default simple
 
 
 
 git add .   // 当前目录下文件提交到缓存
 
- git commit -m "第一次提交测试"    //创建commit, -m 后面为本次提交的说明
+git commit -m "第一次提交测试"    //创建commit, -m 后面为本次提交的说明
 
-git remote add origin https://github.com/q315237943/TestDemo.git  // 远程代码仓库指向origin
+git remote add origin git@github.com:q315237943/TestDemo.git  
+// 名称：origin，目标git@github.com:q315237943/TestDemo.git，git remote rm origin 删除
 
 git push // 推送代码到远程仓库
 git push --set-upstream origin master
