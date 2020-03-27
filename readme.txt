@@ -1,3 +1,4 @@
+print ('Mar 27 2020')
 git init
  // 初始化git
 
@@ -9,9 +10,9 @@ ssh-keygen -t rsa -b 4096 -C "yuan_guoan@163.com" // 生产密匙
 cat  /c/Users/Administrator/.ssh/id_rsa.pub
 
 
-git config --global user.name "yuan"
+git config --global user.name "yuan"		//显示的名字
 
-git config --global user.email "yuan_guoan@163.com"
+git config --global user.email "yuan_guoan@163.com"	//显示的邮箱
 
  git config --global push.default simple
 
@@ -19,12 +20,12 @@ git config --global user.email "yuan_guoan@163.com"
 
 git add .   // 当前目录下文件提交到缓存
 
- git commit -m "first commit" 创建commit
+ git commit -m "第一次提交测试"    //创建commit, -m 后面为本次提交的说明
 
 git remote add origin https://github.com/q315237943/TestDemo.git  // 远程代码仓库指向origin
 
 git push // 推送代码到远程仓库
- git push --set-upstream origin master
+git push --set-upstream origin master
 
 
 
