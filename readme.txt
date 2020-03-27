@@ -1,38 +1,39 @@
-print ('Mar 27 2020')
-222
-git init
- // ³õÊ¼»¯git
+ï»¿git init
+ // åˆå§‹åŒ–git
 
-ssh-keygen -t rsa -b 4096 -C "yuan_guoan@163.com" // Éú²úÃÜ³×
+ssh-keygen -t rsa -b 4096 -C "yuan_guoan@163.com" // ç”Ÿäº§å¯†åŒ™, ç›´æ¥æ‰¾åˆ°å¹¶æ‰“å¼€..sshæ–‡ä»¶å¤¹ä¸‹çš„id_rsa.pubæ–‡ä»¶ï¼Œå¤åˆ¶å¯†é’¥
 
 
  /c/Users/Administrator/.ssh
 
-cat  /c/Users/Administrator/.ssh/id_rsa.pub
+cat  /c/Users/Administrator/.ssh/id_rsa.pub  //æˆ–è€…~/..sh
 
 
-git config --global user.name "yuan"		//ÏÔÊ¾µÄÃû×Ö
+git config --global user.name "yuan"
 
-git config --global user.email "yuan_guoan@163.com"	//ÏÔÊ¾µÄÓÊÏä
+git config --globagitl user.email "yuan_guoan@163.com"
 
-git config --global push.default simple
-
-
-
-git add .   // µ±Ç°Ä¿Â¼ÏÂÎÄ¼şÌá½»µ½»º´æ
-
-git commit -m "µÚÒ»´ÎÌá½»²âÊÔ"    //´´½¨commit, -m ºóÃæÎª±¾´ÎÌá½»µÄËµÃ÷
-
-git remote add origin git@github.com:q315237943/TestDemo.git  
-// Ãû³Æ£ºorigin£¬Ä¿±êgit@github.com:q315237943/TestDemo.git£¬git remote rm origin É¾³ı
-
-git push // ÍÆËÍ´úÂëµ½Ô¶³Ì²Ö¿â
-git push --set-upstream origin master
+ git config --global push.default simple
 
 
 
-eval $(ssh-agent -s)      //ÈİÒ×³öÎÊÌâµÄµØ·½
-ssh-add ~/.ssh/id_rsa  // ½«ÃÜ³×¼ÓÈëgit
+git add .   // å½“å‰ç›®å½•ä¸‹æ–‡ä»¶æäº¤åˆ°ç¼“å­˜
+
+git commit -m "first commit" åˆ›å»ºcommit
+
+git remote add origin git@github.com:q315237943/TestDemo.git  // <name><url>
+//git remote rm origin åˆ é™¤
+
+git remote -v                    //æŸ¥çœ‹ä»“åº“origin ç±»å‹
+
+
+git push // æ¨é€ä»£ç åˆ°è¿œç¨‹ä»“åº“
+git push --set-upstream origin master  //å‡ºç°rejected,ä½¿ç”¨ git push --force--set-upstream origin master
+
+
+
+eval $(ssh-agent -s)      //å®¹æ˜“å‡ºé—®é¢˜çš„åœ°æ–¹ï¼Œå¯åŠ¨ssh -agentï¼Œä¸ç„¶ä¼šssh-addå¤±è´¥
+ssh-add ~/.ssh/id_rsa  // å°†ç§é’¥åŠ å…¥git
 
 
 fgfgfgfgf
@@ -40,3 +41,5 @@ fgfgfgfgf
 
 
 test111111
+
+test2
