@@ -1,4 +1,5 @@
-﻿git init
+﻿20200401
+git init
  // 初始化git
 
 ssh-keygen -t rsa -b 4096 -C "yuan_guoan@163.com" // 生产密匙, 直接找到并打开..ssh文件夹下的id_rsa.pub文件，复制密钥
